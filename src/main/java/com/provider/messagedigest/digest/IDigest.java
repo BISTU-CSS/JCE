@@ -1,0 +1,15 @@
+package com.provider.messagedigest.digest;
+
+public interface IDigest {
+   String getAlgorithmName();
+
+   int getDigestSize();
+
+   void update(byte var1);
+
+   void update(byte[] var1, int var2, int var3);
+
+   int doFinal(byte[] var1, int var2);
+
+   void reset();
+}
